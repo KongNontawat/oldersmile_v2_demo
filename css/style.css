@@ -1,0 +1,44 @@
+:root {
+  --primary: #1D9BF0!important;
+}
+.navbar .nav-link.active {
+  border-bottom:5px solid var(--primary)!important;
+  background-color: #fff!important;
+}
+.navbar .nav-link:hover {
+  background-color: #fafafa;
+}
+.container {
+  max-width: 1140px!important;
+}
+.card {
+  background-color: #fff!important;
+  border: none!important;
+  border-radius: 0.7rem!important;
+}
+.card .card-header,
+.modal-content,
+.list-group {
+  border-top-left-radius: 0.8rem!important;
+  border-top-right-radius: 0.8rem!important;
+}
+.card .card-footer,
+.modal-content,
+.list-group {
+  border-bottom-left-radius: 0.8rem!important;
+  border-bottom-right-radius: 0.8rem!important;
+}
+
+.active-menu a {
+  transition: all .2s;
+}
+
+.active-menu a.d-flex.active,
+.active-menu a.d-flex:hover {
+  background-color: #e0e0e0!important;
+} 
+
+.cat_bar a.active,
+.cat_bar a:hover {
+  background-color: #fafafa;
+}
