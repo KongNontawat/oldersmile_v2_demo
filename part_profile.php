@@ -34,23 +34,20 @@
         <!-- Card Post -->
         <div class="card mb-3">
           <div class="card-body text-center">
-            <img src="img/avatar/1.png" alt="" class="rounded-circle" width="150" height="150">
-            <h5 class="my-2">Kong NOntawat</h5>
-            <p class="my-1 text-muted">(นาย นนทวัฒน์ แสงความสว่าง)</p>
-            <small class="d-block text-muted">ชาย</small>
-            <small class="my-1 text-muted">รหัสสมาชิก : 863635</small>
+            <img src="img/avatar/3.png" alt="" class="rounded-circle" width="150" height="150">
+            <h5 class="my-2">John doe<img src="icon1/verify.png" alt="" class="ms-1" width="15" height="15"></h5>
+            <p class="my-1">Partner</p>
+            <p class="my-1">(นาย จอร์น โดย์)</p>
+            <p class="text-start text-indent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam veritatis architecto mollitia cupiditate beatae sed quo maxime vero ut blanditiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, voluptates repellendus suscipit ex earum labore ut pariatur eius nihil quaerat.</p>
 
             <p>0 : โพสต์</p>
+            <p><img src="icon1/money.png" alt="" class="ms-1" width="30" height="30"> : 20,000 บาท</p>
 
-            <h6 class="mt-4">ความสนใจ</h6>
+            <h6 class="mt-4">ความเชี่ยวชาญ</h6>
             <a href="">#เบาหวาน</a>
             <a href="">#ความดัน</a>
             <a href="">#รักสุขภาพ</a>
 
-            <a href="#" class="btn btn-sm btn-outline-primary col-12 mt-2">แก้ไขโปรไฟล์</a>
-            <a href="admin/user_mng.php" class="btn btn-sm btn-outline-dark col-12 mt-2">จัดการหลังบ้าน</a>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#modal_partner" class="d-block mt-2">สมัครเป็นพาร์ทเนอร์กับเรา ?</a>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#modal_market" class="d-block mt-2">สมัครผู้ค้ากับเรา ?</a>
           </div>
         </div>
 
@@ -147,39 +144,41 @@
         <div class="modal-body">
           <form action="" method="post">
             <div class="mb-3">
+              <label for="">ชื่อผู้ใช้ :</label>
+              <input type="text" name="user_name" id="" class="form-control">
+            </div>
+            <div class="mb-3">
               <label for="">ชื่อ - สกุล :</label>
               <input type="text" name="user_fname" id="" class="form-control">
+            </div>
+            <div class="mb-3">
+                เพศ : <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="user_gender" id="inlineRadio1" value="ชาย">
+                <label class="form-check-label" for="inlineRadio1">ชาย</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="user_gender" id="inlineRadio2" value="หญิง">
+                <label class="form-check-label" for="inlineRadio2">หญิง</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="">เกิดวันที่ :</label>
+              <input type="date" name="user_dob" id="" class="form-control">
             </div>
             <div class="mb-3">
               <label for="">เบอร์โทร :</label>
               <input type="tel" name="user_tel" id="" class="form-control">
             </div>
             <div class="mb-3">
-              <label for="">อีเมล :</label>
-              <input type="email" name="user_tel" id="" class="form-control">
+              <label for="">รหัสผ่าน :</label>
+              <input type="password" name="user_pass" id="" class="form-control">
             </div>
             <div class="mb-3">
-              <label for="">ที่อยู่ :</label>
-              <textarea name="" id="" cols="30" rows="2" class="form-control"></textarea>
-            </div>
-            <div class="mb-3">
-              <label for="">รายละเอียดเกี่ยวกับคุณ <small class="text-muted">*อาชีพ, ตำแหน่ง, ความสามารถ</small> :</label>
-              <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
-            </div>
-            <div class="mb-3">
-              <label for="">เลขบัญชี :</label>
-              <input type="number" name="user_tel" id="" class="form-control">
-            </div>
-            <div class="mb-3">
-              <label for="">ชื่อบัญชี :</label>
-              <input type="text" name="user_tel" id="" class="form-control">
-            </div>
-            <div class="mb-3">
-              <label for="">บัญชีธนาคาร :</label>
-              <input type="text" name="user_tel" id="" class="form-control">
+              <label for="">ยืนยันรหัสผ่าน :</label>
+              <input type="password" name="user_pass2" id="" class="form-control">
             </div>
             <div class="input-group mb-3">
-              <label class="input-group-text" for="image">รูปถ่ายบัตรประชาชน</label>
+              <label class="input-group-text" for="image">รูปโปรไฟล์</label>
               <input type="file" class="form-control" name="user_image" id="image">
             </div>
             <button type="submit" class="btn btn-primary btn-lg col-12">สมัคร</button>
@@ -198,38 +197,41 @@
         <div class="modal-body">
           <form action="" method="post">
             <div class="mb-3">
-              <label for="">ชื่อธุรกิจของคุณ :</label>
+              <label for="">ชื่อผู้ใช้ :</label>
               <input type="text" name="user_name" id="" class="form-control">
             </div>
             <div class="mb-3">
-              <label for="">ชื่อ-สกุลเจ้าของธุรกิจ :</label>
+              <label for="">ชื่อ - สกุล :</label>
               <input type="text" name="user_fname" id="" class="form-control">
             </div>
             <div class="mb-3">
-              <label for="">อีเมล :</label>
-              <input type="email" name="user_dob" id="" class="form-control">
+                เพศ : <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="user_gender" id="inlineRadio1" value="ชาย">
+                <label class="form-check-label" for="inlineRadio1">ชาย</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="user_gender" id="inlineRadio2" value="หญิง">
+                <label class="form-check-label" for="inlineRadio2">หญิง</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="">เกิดวันที่ :</label>
+              <input type="date" name="user_dob" id="" class="form-control">
             </div>
             <div class="mb-3">
               <label for="">เบอร์โทร :</label>
               <input type="tel" name="user_tel" id="" class="form-control">
             </div>
             <div class="mb-3">
-              <label for="">ที่อยู่ :</label>
-              <textarea name="" id="" cols="30" rows="2" class="form-control"></textarea>
+              <label for="">รหัสผ่าน :</label>
+              <input type="password" name="user_pass" id="" class="form-control">
             </div>
             <div class="mb-3">
-              <label for="">ประเภทธุรกิจของคุณ :</label>
-              <select name="" id="" class="form-select">
-                <option value="">-- เลือกประเภทธุรกิจของคุณ --</option>
-              </select>
+              <label for="">ยืนยันรหัสผ่าน :</label>
+              <input type="password" name="user_pass2" id="" class="form-control">
             </div>
-            <div class="mb-3">
-              <label for="">อธิบายรายละเอียดธุรกิจของคุณ :</label>
-              <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
-            </div>
-            <label class="" for="image">*รูปถ่ายบัตรประชาชนเจ้าของธุรกิจ</label>
             <div class="input-group mb-3">
-              <label class="input-group-text" for="image">รูปถ่ายบัตรประชาชน</label>
+              <label class="input-group-text" for="image">รูปโปรไฟล์</label>
               <input type="file" class="form-control" name="user_image" id="image">
             </div>
             <button type="submit" class="btn btn-primary btn-lg col-12">สมัคร</button>
@@ -251,7 +253,7 @@
   <script src="js/index.js"></script>
   <script>
     $(function () {
-      $('.active-menu a.my_profile').addClass('active');
+      // $('.active-menu a.my_profile').addClass('active');
       $('.active-header').text('โปรไฟล์');
     })
   </script>

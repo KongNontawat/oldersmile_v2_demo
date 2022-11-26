@@ -1,8 +1,14 @@
-<div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-body">
-    <div class="active-menu mt-2 d-grid">
-      <a href="index.php" class="text-center mb-3">
+<div class="offcanvas offcanvas-start" id="offcanvas" data-bs-scroll="true">
+  <div class="offcanvas-header">
+      <a href="index.php" class="text-center">
         <h3 class="text-logo"><b>OlderSmile</b></h3>
+      </a>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="active-menu d-grid">
+      <a href="#" class="btn btn-primary col-12 mb-2" data-bs-dismiss="offcanvas" data-bs-toggle="modal" data-bs-target="#modal_create">
+        + สร้างโพสต์
       </a>
       <a href="my_profile.php?id=" class="d-flex align-items-center rounded-f py-2 px-1 mb-1">
         <img src="img/avatar/1.png" alt="" class="rounded-circle border me-2" width="30" height="30">
@@ -31,3 +37,4 @@
     </div>
   </div>
 </div>
+<?php include('modal_create.php') ?>

@@ -32,7 +32,7 @@
         <img src="img/banner1.jpg" alt="" class="rounded-f mb-3" width="100%">
 
         <!-- Card Post -->
-        <div class="card mb-3">
+        <div class="card mb-3" id="main_container1">
           <div class="card-header bg-white d-flex align-items-center justify-content-between">
             <a href="user_profile.php?id=" class="d-flex align-items-center">
               <img src="img/avatar/5.png" alt="" class="rounded-circle border me-2" width="45" height="45">
@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="card-body">
-            <p class="text-indent text-o-3">dignissimos. adipisicing elit. Tenetur quod ut, ipsum voluptate eligendi voluptas ab iure magnam sint. Doloremque?</p>
+            <a href="post_detail.php"><p class="text-indent text-o-3">dignissimos. adipisicing elit. Tenetur quod ut, ipsum voluptate eligendi voluptas ab iure magnam sint. Doloremque?</p></a>
             <div class="d-flex align-items-center justify-content-between mt-2">
               <a href="#" class="text-primary">#category</a>
               <small class="text-muted">โพสต์เมื่อ : 13/10/2022</small>
@@ -65,9 +65,23 @@
             </div>
             <small class="text-muted">รับชม : 3,124</small>
           </div>
+          <script>
+            window.addEventListener('scroll', function() {
+            var el = document.querySelector('#main_container1');
+            var pos = el.getBoundingClientRect();
+
+            if(pos.top >= 0 && pos.bottom <= window.innerHeight) {
+              console.log('post 1 : เห็น');
+            }
+
+            if(pos.top < window.innerHeight && pos.bottom >= 0) {
+              console.log('post 1 : ไม่เห็น');
+            }
+            });
+          </script>
         </div>
 
-        <div class="card mb-3">
+        <div class="card mb-3" id="main_container2">
           <div class="card-header bg-white d-flex align-items-center justify-content-between">
             <a href="user_profile.php?id=" class="d-flex align-items-center">
               <img src="img/avatar/3.png" alt="" class="rounded-circle border me-2" width="45" height="45">
@@ -81,7 +95,7 @@
               </ul>
             </div>
           </div>
-          <img src="https://t1.blockdit.com/photos/2022/11/6369d92af271a001ba829eb1_800x0xcover_n5mQOFEB.jpg" alt="" class="card-img-top">
+          <a href="post_detail.php"><img src="https://t1.blockdit.com/photos/2022/11/6369d92af271a001ba829eb1_800x0xcover_n5mQOFEB.jpg" alt="" class="card-img-top"></a>
           <div class="card-body">
             <p class="text-indent text-o-3">Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam a neque aliquid aperiam nisi debitis ea sint asperiores animi dignissimos. adipisicing elit. Tenetur quod ut, ipsum voluptate eligendi voluptas ab iure magnam sint. Doloremque?</p>
             <div class="d-flex align-items-center justify-content-between mt-2">
@@ -104,7 +118,7 @@
           </div>
         </div>
 
-        <div class="card mb-3">
+        <div class="card mb-3" id="main_container3">
           <div class="card-header bg-white d-flex align-items-center justify-content-between">
             <a href="user_profile.php?id=" class="d-flex align-items-center">
               <img src="img/avatar/2.png" alt="" class="rounded-circle border me-2" width="45" height="45">
@@ -139,7 +153,7 @@
           </div>
         </div>
 
-        <div class="card mb-3">
+        <div class="card mb-3" id="main_container4">
           <div class="card-header bg-white d-flex align-items-center justify-content-between">
             <a href="user_profile.php?id=" class="d-flex align-items-center">
               <img src="https://t1.blockdit.com/photos/2021/02/6018ff2d473f6227e0649a46_120x120xcover_6JtJp04Y.jpg" alt="" class="rounded-circle border me-2" width="45" height="45">
@@ -175,7 +189,7 @@
           </div>
         </div>
 
-        <div class="card mb-3">
+        <div class="card mb-3" id="main_container5">
           <div class="card-header bg-white d-flex align-items-center justify-content-between">
             <a href="user_profile.php?id=" class="d-flex align-items-center">
               <img src="https://t1.blockdit.com/photos/2021/02/6018ff2d473f6227e0649a46_120x120xcover_6JtJp04Y.jpg" alt="" class="rounded-circle border me-2" width="45" height="45">
@@ -227,13 +241,32 @@
 
   <script src="jquery/jquery-3.6.1.min.js"></script>
   <script src="bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   <script src="js/base.js"></script>
   <script src="js/index.js"></script>
   <script>
     $(function () {
       $('.active-menu a.home').addClass('active');
       $('.active-header').text('หน้าแรก');
+
     })
+
+    // window.addEventListener('scroll', function() {
+    // var el = document.querySelector('#main_container');
+    // var pos = el.getBoundingClientRect();
+
+    // if(pos.top >= 0 && pos.bottom <= window.innerHeight) {
+    //   console.log('เห็น');
+    // }
+
+    // if(pos.top < window.innerHeight && pos.bottom >= 0) {
+    //   console.log('ไม่เห็น');
+    // }
+    // });
+
+
+
   </script>
 </body>
 

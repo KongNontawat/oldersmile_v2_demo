@@ -11,7 +11,7 @@
       <li class="nav-item"><a href="category.php" class="nav-link px-1 px-sm-3 category"><img src="icon1/room.png" alt="" width="30"
             height="30"></a></li>
       <li class="nav-item"><a href="my_profile.php" class="nav-link px-1 px-sm-3 my_profile"><img src="img/avatar/1.png" class="rounded-circle border"
-            width="40" height="40"></a></li>
+            width="35" height="35"></a></li>
       <li class="nav-item d-md-none"><a href="#" class="nav-link px-1 px-sm-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"><img src="icon1/menu.png" alt="" width="30"
         height="30"></a></li>
     </ul>

@@ -2,7 +2,7 @@
   --primary: #1D9BF0!important;
 }
 .navbar .nav-link.active {
-  border-bottom:5px solid var(--primary)!important;
+  border-bottom:3px solid var(--primary)!important;
   background-color: #fff!important;
 }
 .navbar .nav-link:hover {
